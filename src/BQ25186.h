@@ -16,7 +16,7 @@ public:
     explicit BQ25186(uint8_t i2cAddress = 0x6A);
 
     bool begin();
-
+    void check_BQ25186_faults();
     /* ================= High-Level API ================= */
     
     bool disableCharging(bool enable);
