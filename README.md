@@ -61,7 +61,7 @@ The library is intentionally split into two layers:
   - `setChargeCurrent_mA()`
   - `configureTimer()`
   - `setTSControl()`
-  - `enableCharging()`
+  - `disableCharging()`
 - Status and fault interpretation with readable output
 
 This makes the library suitable for both:
@@ -106,7 +106,7 @@ void setup() {
   charger.begin();
   charger.setBatteryVoltage_mV(4200);
   charger.setChargeCurrent_mA(500);
-  charger.enableCharging(true);
+  charger.disableCharging(true);
 }
 ```
 
